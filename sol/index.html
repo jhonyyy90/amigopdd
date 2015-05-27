@@ -44,6 +44,9 @@
             <li data-icon='false'><a href="../alc/index.html"><i class='lIcon fa fa-bullhorn'></i>Conduce sin alcohol</a></li>
             <li data-icon='false'><a href="../sol/index.html"><i class='lIcon fa fa-bullhorn'></i>Solicitud de platicas</a></li>
         </ul>
+<ul data-role="listview">
+            <li data-icon='false'><a href="#seguimientoDenuncia" data-rel='popup' data-position-to='window' data-role='button' data-transition='pop' data-inline='true'><i class='lIcon fa fa-info'></i>Estatus Denuncia</a>				            </li>
+        </ul>         
     </div>
 
 <!-- End Menu -->
@@ -191,7 +194,23 @@
             </div>
           </div>
     </div>
+ 
+    <div data-role='popup' id='seguimientoDenuncia' data-theme='a'>
+        <div data-role='header' data-theme='b'>
+          <h1>Ingrese su numero de folio</h1>
+         </div>
+       <form action="seguimiento.html" method="post">
+         <div data-role='content' data-theme='a'>
+          <label for="folio">Folio:</label>
+          <input type="text" name="folio" id="folio" value="" data-clear-btn="true">
+          <div class='showastabs center nobg'>
+			<button type="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Consultar</button>
+           	<a href="dialog/index.html" data-rel="back" data-role="button" data-inline="true"><i class='lIcon fa fa-times'></i>Cerrar</a>
+
+            </div>
+          </div>
+                </form>
+    </div>
     <script src="../js/nativedroid.script.js"></script>
-	
     </body>
 </html>
