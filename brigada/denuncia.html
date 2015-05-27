@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+<meta charset="UTF-8">
+        <title>Amigo Prevención del delito</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+			<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="../css/jquerymobile.nativedroid.css" />
+        <link rel="stylesheet" href="../css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+        <link rel="stylesheet" href="../css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+		<script src="../js/jquery-1.9.1.min.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+    <div data-role="page" data-theme='a'>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>Brigada de vigilancia animal</h1>
+	            <a href="#menu" data-role='button' data-inline='false'><i class='lIcon fa fa-bars'></i></a>
+        </div>
+                
+<!-- Menú -->
+	<div data-role="panel" data-display="push" id="menu" data-theme="b">
+       <ul data-role="listview">
+            <li data-icon='false'><a href="../index.html"><i class='lIcon fa fa-home'></i>Inicio</a></li>
+        </ul>    
+	    <div data-role="collapsible" data-content-theme="b">
+            <h4>Brigada de vigilanca animal</h4>
+            <ul data-role="listview">
+	            <li data-icon='false'><a href="ques.html"><i class='lIcon fa fa-angle-right'></i>¿Qué es?</a></li>
+	            <li data-icon='false'><a href="#"><i class='lIcon fa fa-angle-right'></i>Denuncia</a></li>
+            </ul>
+        </div>
+	    <div data-role="collapsible" data-content-theme="b">
+            <h4>Grafiti</h4>
+            <ul data-role="listview">
+	            <li data-icon='false'><a href="../grafiti/ques.html"><i class='lIcon fa fa-angle-right'></i>¿Qué es?</a></li>
+	            <li data-icon='false'><a href="../grafiti/donde.html"><i class='lIcon fa fa-angle-right'></i>¿Donde puedo verlos?</a></li>
+	            <li data-icon='false'><a href="../grafiti/ins.html"><i class='lIcon fa fa-angle-right'></i>Inscribete</a></li>
+	            <li data-icon='false'><a href="../grafiti/denuncia.html"><i class='lIcon fa fa-angle-right'></i>Denuncia</a></li>
+            </ul>
+        </div>
+        <ul data-role="listview">
+            <li data-icon='false'><a href="../alc/index.html"><i class='lIcon fa fa-bullhorn'></i>Conduce sin alcohol</a></li>
+            <li data-icon='false'><a href="../sol/index.html"><i class='lIcon fa fa-bullhorn'></i>Solicitud de platicas</a></li>
+        </ul>
+    </div>
+
+<!-- End Menu -->
+     <div data-role="content">   
+	
+        	
+                
+            <div class='inset'>
+            <h2>¡Haz tu denuncía!</h2>
+           
+	          
+            <form action="#" method="post" target="_self">
+            <input type="hidden" name="flag" value="1">
+               <ul data-role="listview" data-inset="true">
+
+                    <li data-role="fieldcontain">
+                        <label for="select-choice-1b" class="select">Tipo de denuncía:</label>
+                        <select name="select-choice-1" id="select-choice-1b" data-native-menu="true">
+                            <option value="maltrato">Maltrato animal</option>
+                            <option value="abandono">Abadono animal</option>
+                            <option value="esterilizacion">Plan de esterilización</option>
+                            <option value="acopio">Acopio</option>
+                        </select>
+                    </li>
+                    <li data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <legend>Animal(es) involucrado(s):</legend>
+                            <input type="checkbox" name="checkbox-1a" id="checkbox-1ab">
+                            <label for="checkbox-1ab">Perros</label>
+                            <input type="checkbox" name="checkbox-2a" id="checkbox-2ab">
+                            <label for="checkbox-2ab">Gatos</label>
+                            <input type="checkbox" name="checkbox-3a" id="checkbox-3ab">
+                            <label for="checkbox-3ab">Aves</label>
+                            <input type="checkbox" name="checkbox-4a" id="checkbox-4ab">
+                            <label for="checkbox-4ab">Exóticos</label>
+                            <input type="checkbox" name="checkbox-5a" id="checkbox-5ab">
+                            <label for="checkbox-5ab">Otros</label>
+                      	</fieldset>
+                    </li>                   
+                    <li><b>Dirección</b></li>
+                  <li data-role="fieldcontain">
+                        <label for="select-choice-1b" class="select">Delegación:</label>
+                        <select name="select-choice-1" id="select-choice-1b" data-native-menu="true">
+                            <option value="maltrato">Alvaro Obregon</option>
+                            <option value="abandono">Azcapozalco</option>
+                            <option value="esterilizacion">Benito Juarez</option>
+                            <option value="acopio">Cuajimalpa de Morelos</option>
+                            <option value="acopio">Coyoacán</option>
+                            <option value="acopio">Cuauhtemoc</option>
+                            <option value="acopio">Gustavo A. Madero</option>
+                            <option value="acopio">Iztacalco</option>
+                            <option value="acopio">Iztapalapa</option>
+                            <option value="acopio">La Magdalena Contreras</option>
+                            <option value="acopio">Miguel Hidalgo</option>
+                            <option value="acopio">Milpa Alta</option>
+                            <option value="acopio">Tláhuac</option>
+                            <option value="acopio">Tlalpan</option>
+                            <option value="acopio">Venustiano Carranza</option>
+                            <option value="acopio">Xochimilco</option>
+                        </select>
+                    </li>
+                    <li data-role="fieldcontain">
+                        <label for="name2b">Colonia:</label>
+                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Colonia">
+                    </li>
+                    <li data-role="fieldcontain">
+                        <label for="name2b">Calle:</label>
+                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Calle">
+                    </li>
+                    <li data-role="fieldcontain">
+                        <label for="name2b">Número:</label>
+                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Num">
+                    </li> 
+                    <li data-role="fieldcontain">
+                        <label for="textarea2b">Referencias:</label>
+                    <textarea cols="40" rows="8" name="textarea2" id="textarea2b" placeholder="Referencias"></textarea>
+                    </li>    
+                    <li><b>Datos denunciante</b></li>
+                    <li data-role="fieldcontain">
+                        <label for="name2b">Nombre:</label>
+                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Nombre">
+                    </li>
+                    <li data-role="fieldcontain">
+                        <label for="select-choice-1b" class="select">Genero:</label>
+                        <select name="select-choice-1" id="select-choice-1b" data-native-menu="true">
+                            <option value="maltrato">Femenino</option>
+                            <option value="abandono">Masculino</option>
+                        </select>
+                    </li>       
+                    <li data-role="fieldcontain">
+                        <label for="name2b">Edad:</label>
+                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Nombre">
+                    </li>                    
+                    <li data-role="fieldcontain">
+                        <label for="select-choice-1b" class="select">Delegación:</label>
+                        <select name="select-choice-1" id="select-choice-1b" data-native-menu="true">
+                            <option value="maltrato">Alvaro Obregon</option>
+                            <option value="abandono">Azcapozalco</option>
+                            <option value="esterilizacion">Benito Juarez</option>
+                            <option value="acopio">Cuajimalpa de Morelos</option>
+                            <option value="acopio">Coyoacán</option>
+                            <option value="acopio">Cuauhtemoc</option>
+                            <option value="acopio">Gustavo A. Madero</option>
+                            <option value="acopio">Iztacalco</option>
+                            <option value="acopio">Iztapalapa</option>
+                            <option value="acopio">La Magdalena Contreras</option>
+                            <option value="acopio">Miguel Hidalgo</option>
+                            <option value="acopio">Milpa Alta</option>
+                            <option value="acopio">Tláhuac</option>
+                            <option value="acopio">Tlalpan</option>
+                            <option value="acopio">Venustiano Carranza</option>
+                            <option value="acopio">Xochimilco</option>
+                        </select>
+                    </li>
+                    <li data-role="fieldcontain">
+                        <label for="name2b">Colonia:</label>
+                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Colonia">
+                    </li>
+                    <li data-role="fieldcontain">
+                        <label for="name2b">Calle:</label>
+                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Calle">
+                    </li>
+                    <li data-role="fieldcontain">
+                        <label for="name2b">Número:</label>
+                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Num">
+                    </li> 
+                    <li><b>Evidencia</b></li>
+                    <li data-role="fieldcontain">
+                        <label for="name2b">Video, imagenes, audio:</label>
+                        <input type="file" name="adjunto" multiple/>
+                    </li> 
+                    <li><center>
+                   			 <a href='#okDialog' data-rel='popup' data-position-to='window' data-role='button' data-icon='external-link' data-transition='pop' data-inline='true'>Enviar</a>
+                             </center>
+                    </li>             
+                     </ul>
+             </form>
+
+            </div>
+
+    
+
+    </div>
+    <div data-role='popup' id='seguimientoDenuncia' data-theme='a'>
+        <div data-role='header' data-theme='b'>
+          <h1>Ingrese su numero de folio</h1>
+         </div>
+       <form action="seguimiento.html" method="post">
+         <div data-role='content' data-theme='a'>
+          <label for="folio">Folio:</label>
+          <input type="text" name="folio" id="folio" value="" data-clear-btn="true">
+          <div class='showastabs center nobg'>
+			<button type="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Consultar</button>
+           	<a href="dialog/index.html" data-rel="back" data-role="button" data-inline="true"><i class='lIcon fa fa-times'></i>Cerrar</a>
+
+            </div>
+          </div>
+                </form>
+    </div>
+    
+        <div data-role='popup' id='okDialog' data-theme='a'>
+        <div data-role='header' data-theme='b'>
+          <h1><i class='fa fa-check'></i>Gracias por su denuncia!</h1>
+         </div>
+         <div data-role='content' data-theme='a'>
+				<p>Sú numero de fólio es: <strong>BA-1500312</strong>, conservelo para darle seguimiento.</p>
+          <div class='showastabs center nobg'>
+           	<a href="dialog/index.html" data-rel="back" data-role="button" data-inline="true"><i class='lIcon fa fa-times'></i>Cerrar</a>
+            </div>
+          </div>
+    </div>
+    <script src="../js/nativedroid.script.js"></script>
+	<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+			<ul>
+					<li><a href="ques.html"><i class='blIcon fa fa-home'></i>¿Que es?</a></li>
+					<li><a href="#"><i class='blIcon fa fa-bullhorn'></i>Denuncia</a></li>
+					<li><a href="#seguimientoDenuncia" data-rel='popup' data-position-to='window' data-role='button' data-transition='pop' data-inline='true'><i class='blIcon fa fa-question'></i>Estatus denuncia</a></li>
+				</ul>
+			</div>
+		</div>
+    </body>
+</html>
