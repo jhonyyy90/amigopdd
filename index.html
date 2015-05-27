@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+<meta charset="UTF-8">
+        <title>Amigo Prevención del delito</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+    <div data-role="page" data-theme='a'>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>Amigo prevención del delito</h1>
+	            <a href="#menu" data-role='button' data-inline='false'><i class='lIcon fa fa-bars'></i></a>
+        </div>
+                
+<!-- Menú -->
+	<div data-role="panel" data-display="push" id="menu" data-theme="b">
+	    <div data-role="collapsible" data-content-theme="b">
+            <h4>Brigada de vigilanca animal</h4>
+            <ul data-role="listview">
+	            <li data-icon='false'><a href="brigada/ques.html"><i class='lIcon fa fa-angle-right'></i>¿Qué es?</a></li>
+	            <li data-icon='false'><a href="brigada/denuncia.php"><i class='lIcon fa fa-angle-right'></i>Denuncia</a></li>
+            </ul>
+        </div>
+	    <div data-role="collapsible" data-content-theme="b">
+            <h4>Grafiti</h4>
+            <ul data-role="listview">
+	            <li data-icon='false'><a href="grafiti/ques.html"><i class='lIcon fa fa-angle-right'></i>¿Qué es?</a></li>
+	            <li data-icon='false'><a href="grafiti/donde.html"><i class='lIcon fa fa-angle-right'></i>¿Donde puedo verlos?</a></li>
+	            <li data-icon='false'><a href="grafiti/ins.php"><i class='lIcon fa fa-angle-right'></i>Inscribete</a></li>
+	            <li data-icon='false'><a href="grafiti/denuncia.php"><i class='lIcon fa fa-angle-right'></i>Denuncia</a></li>
+            </ul>
+        </div>
+        <ul data-role="listview">
+            <li data-icon='false'><a href="alc/"><i class='lIcon fa fa-bullhorn'></i>Conduce sin alcohol</a></li>
+            <li data-icon='false'><a href="sol/"><i class='lIcon fa fa-bullhorn'></i>Solicitud de platicas</a></li>
+        </ul>
+    </div>
+
+<!-- End Menu -->
+     <div data-role="content">   
+	        <div class='inset'>
+            	<center><img src="img/logocdmx.png"/></center>
+            </div>
+        	<ul data-nativedroid-plugin='cards'>
+            
+            <li data-cards-type='weather'>
+					<h1>CDMX</h1>
+					<ul class='detail'>
+						<li><i class='fa fa-sun-o sunny'></i>
+							<span>SUNNY</span>
+							<span><i class='fa fa-fire'></i> 3km/h</span>
+						</li>
+						<li>14&deg;</li>
+					</ul>
+					<ul class='week'>
+						<li>
+							<span>WED</span>
+							<i class='fa fa-cloud'></i>
+							<strong>24&deg;</strong>
+							<span>11&deg;</span>
+						</li>
+						<li>
+							<span>THU</span>
+							<i class='fa fa-cloud'></i>
+							<strong>20&deg;</strong>
+							<span>10&deg;</span>
+						</li>
+						<li>
+							<span>FRI</span>
+							<i class='fa fa-cloud'></i>
+							<strong>11&deg;</strong>
+							<span>3&deg;</span>
+						</li>
+						<li>
+							<span>SAT</span>
+							<i class='fa fa-cloud'></i>
+							<strong>4&deg;</strong>
+							<span>0&deg;</span>
+						</li>
+					</ul>
+            
+            
+				<li data-cards-type='text'>
+					<h1>¡Hola amigo de la Prevención del Delito!</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+				</li>
+			</ul>
+
+    
+
+    </div>
+    <script src="js/nativedroid.script.js"></script>
+
+    </body>
+</html>

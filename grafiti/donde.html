@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+<meta charset="UTF-8">
+        <title>Amigo Prevención del delito</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="../css/jquerymobile.nativedroid.css" />
+        <link rel="stylesheet" href="../css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
+        <link rel="stylesheet" href="../css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    </head>
+    <body>
+
+    
+
+    <div data-role="page" data-theme='a'>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>Grafiti</h1>
+	            <a href="#menu" data-role='button' data-inline='false'><i class='lIcon fa fa-bars'></i></a>
+        </div>
+                
+<!-- Menú -->
+	<div data-role="panel" data-display="push" id="menu" data-theme="b">
+       <ul data-role="listview">
+            <li data-icon='false'><a href="../index.html"><i class='lIcon fa fa-home'></i>Inicio</a></li>
+        </ul>
+       <div data-role="collapsible" data-content-theme="b">
+            <h4>Brigada de vigilanca animal</h4>
+            <ul data-role="listview">
+	            <li data-icon='false'><a href="#"><i class='lIcon fa fa-angle-right'></i>¿Qué es?</a></li>
+	            <li data-icon='false'><a href="denuncia.php"><i class='lIcon fa fa-angle-right'></i>Denuncia</a></li>
+            </ul>
+        </div>
+	<div data-role="collapsible" data-content-theme="b">
+            <h4>Grafiti</h4>
+            <ul data-role="listview">
+	            <li data-icon='false'><a href="ques.html"><i class='lIcon fa fa-angle-right'></i>¿Qué es?</a></li>
+	            <li data-icon='false'><a href="#"><i class='lIcon fa fa-angle-right'></i>¿Donde puedo verlos?</a></li>
+	            <li data-icon='false'><a href="ins.php"><i class='lIcon fa fa-angle-right'></i>Inscribete</a></li>
+	            <li data-icon='false'><a href="denuncia.php"><i class='lIcon fa fa-angle-right'></i>Denuncia</a></li>
+            </ul>
+        </div>
+<ul data-role="listview">
+            <li data-icon='false'><a href="../alc/"><i class='lIcon fa fa-bullhorn'></i>Conduce sin alcohol</a></li>
+            <li data-icon='false'><a href="../sol/"><i class='lIcon fa fa-bullhorn'></i>Solicitud de platicas</a></li>
+        </ul>
+    </div>
+
+<!-- End Menu -->
+        <div data-role="content">  
+
+ 			<div class='inset'>
+
+ 				<div class="message info">
+					<i class="fa fa-lightbulb-o"></i>
+					<p>Si quieres ser parte de esto, no olvides inscribirte</p>
+				</div>
+                
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+              <thead>
+                <tr>
+                  <th data-priority="2">ref</th>
+                  <th>Delegación</th>
+                  <th data-priority="3">Cuantos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>Cuauhtemoc</td>
+                  <td>74</td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>Tlahuac</td>
+                  <td>64</td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>Xochimilco</td>
+                  <td>87</td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td>Magdalena contreras</td>
+                  <td>87</td>
+                </tr>
+              </tbody>
+            </table>
+ 			</div>
+				        
+        </div>
+
+    </div>
+        <script src="../js/nativedroid.script.js"></script>
+
+    </body>
+</html>
