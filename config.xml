@@ -10,14 +10,14 @@
 
         <preference name="phonegap-version" value="3.7.0" />
 
-        <name>Sample Config.xml</name>
+        <name>Amigo PDD</name>
 
         <description>
-        An example for phonegap build docs. 
+        Aplicación para la Prevención del Delito 
         </description>
 
         <author href="http://eonproduccion.net" email="e.martinez@eoninnovaction.com">
-        Your Name
+        Ernesto Martínez Cardoso Bonilla de Mauleon
         </author>
 
     </widget>
