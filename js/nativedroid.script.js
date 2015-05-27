@@ -140,9 +140,9 @@ $(document).on("pageinit", function() {
 						route.container = obj.find(".map").get(0);
 						nativeDroid.api.helper.googlemaps.directions.getRoute(route);
 					},
-					/*weather : function(obj) {
+					weather : function(obj) {
 						console.log("weather");
-					},*/
+					},
 					publictransport : function(obj) {
 						console.log("publictransport");
 					},
