@@ -1,0 +1,33 @@
+$(document).ready(function(){
+	var menu = "<div data-role='collapsible' data-content-theme='b'>"+
+            "<h4>Brigada de vigilanca animal</h4>"+
+            "<ul data-role='listview'>"+
+	            "<li data-icon='false'><a href='brigada/ques.html'><i class='lIcon fa fa-angle-right'></i>¿Qué es?</a></li>"+
+	            "<li data-icon='false'><a href='brigada/denuncia.html'><i class='lIcon fa fa-angle-right'></i>Denuncia</a></li>"+
+            "</ul>"+
+        "</div>"+
+	    "<div data-role='collapsible' data-content-theme='b'>"+
+            "<h4>Unidad Grafiti</h4>"+
+            "<ul data-role='listview'>"+
+	            "<li data-icon='false'><a href='grafiti/ques.html'><i class='lIcon fa fa-angle-right'></i>¿Qué es?</a></li>"+
+	            "<li data-icon='false'><a href='grafiti/donde.html'><i class='lIcon fa fa-angle-right'></i>¿Donde puedo verlos?</a></li>"+
+	            "<li data-icon='false'><a href='grafiti/ins.html'><i class='lIcon fa fa-angle-right'></i>Inscribete</a></li>"+
+	            "<li data-icon='false'><a href='grafiti/denuncia.html'><i class='lIcon fa fa-angle-right'></i>Denuncia</a></li>"+
+            "</ul>"+
+        "</div>"+
+        "<ul data-role='listview'>"+
+            "<li data-icon='false'><a href='alc/index.html'><i class='lIcon fa fa-bullhorn'></i>Conduce sin alcohol</a></li>"+
+            "<li data-icon='false'><a href='sol/index.html'><i class='lIcon fa fa-bullhorn'></i>Solicitud de platicas</a></li>"+
+        "</ul>"+
+        "<ul data-role='listview'>"+
+            "<li data-icon='false'><a href='#seguimientoDenuncia' data-rel='popup' data-position-to='window' data-role='button' data-transition='pop' data-inline='true'><i class='lIcon fa fa-info'></i>Estatus Deuncia</a>"+
+			"</li>"+
+    "</ul>";
+	//alert(menu);
+	//$("#menu").append(menu);
+})
+
+
+function carga(src){
+	//$("#mainContent").load("vista/"+src);
+}

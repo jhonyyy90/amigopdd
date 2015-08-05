@@ -117,7 +117,7 @@ width: 91px;
 	margin: 3px 25px 7px 55px;
 	padding: 7px 0px 0px 0px;
 	font-size: 25px;
-	font-weight: 100;
+	font-weight: 300;
 }
 
 .ui-mobile label, div.ui-controlgroup-label,
@@ -619,7 +619,10 @@ pre {
 }
 
 .ui-footer .ui-btn-icon-top .ui-icon { top: 10px; }
-
+.imgLogo{
+	height: auto;
+	max-width: 100%;
+}
 .blIcon {
 	display: block;
 	margin: 7px;

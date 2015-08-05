@@ -21,7 +21,7 @@
 
     <div data-role="page" data-theme='a'>
         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-            <h1>Grafiti</h1>
+            <h1>Amigo prevención del delito</h1>
 	            <a href="#menu" data-role='button' data-inline='false'><i class='lIcon fa fa-bars'></i></a>
         </div>
                 
@@ -38,7 +38,7 @@
             </ul>
         </div>
 	<div data-role="collapsible" data-content-theme="b">
-            <h4>Grafiti</h4>
+            <h4>Unidad Grafiti</h4>
             <ul data-role="listview">
 	            <li data-icon='false'><a href="ques.html"><i class='lIcon fa fa-angle-right'></i>¿Qué es?</a></li>
 	            <li data-icon='false'><a href="#"><i class='lIcon fa fa-angle-right'></i>¿Donde puedo verlos?</a></li>
@@ -57,6 +57,7 @@
 
 <!-- End Menu -->
         <div data-role="content">  
+	            <h1><img src="../img/ug.png"/>Unidad Grafiti</h1>
 
  			<div class='inset'>
 
@@ -118,20 +119,28 @@
           </div>
                 </form>
     </div>
-    <script src="../js/nativedroid.script.js"></script>
-    
+        <script src="../js/nativedroid.script.js"></script>
+
     <script>
 	
 
-    $( document ).ready(function() {
-	var latLng = new google.maps.LatLng(19.4978,-99.1269);
+	var latLng = new google.maps.LatLng(19.3907337,-99.1436126);
 
     $('#map_canvas').gmap().bind('init', function(ev, map) {
-$('#map_canvas').gmap('option', 'center', latLng);
-$('#map_canvas').gmap('option', 'zoom', 12);   
+	$('#map_canvas').gmap('option', 'center', latLng);
+	$('#map_canvas').gmap('option', 'zoom', 11);   
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.498216, -99.201634),'animation': google.maps.Animation.BOUNCE } );
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.312344, -99.175542),'animation': google.maps.Animation.BOUNCE } );
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.428943, -99.105504),'animation': google.maps.Animation.BOUNCE } );
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.445779, -99.060872),'animation': google.maps.Animation.BOUNCE } );
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.485270, -99.095204),'animation': google.maps.Animation.BOUNCE } );
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.301975, -99.192021),'animation': google.maps.Animation.BOUNCE } );
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.259846, -99.103444),'animation': google.maps.Animation.BOUNCE } );
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.426232, -99.146896),'animation': google.maps.Animation.BOUNCE } );
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.465525, -99.154170),'animation': google.maps.Animation.BOUNCE } );
+	$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(19.396887, -99.146788),'animation': google.maps.Animation.BOUNCE } );
 	});
 
-});
     </script>
     </body>
 </html>
